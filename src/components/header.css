@@ -1,0 +1,29 @@
+.Scooter {
+    /* min-width: 100%; */
+    height:80px;
+    /* background: grey; */
+    overflow: hidden;
+    z-index: 5;
+  }
+
+.Scoot-right {
+    transform: scaleX(-1);
+    animation: scoot-right-anim 11s linear infinite;
+    /*App-logo-move linear 2.5s,
+    App-logo-spin linear 2.5s,*/
+    animation-fill-mode: forwards;
+    animation-timing-function:ease-in-out;
+    display: inline;
+    height: 40px;
+    max-height: 40px;
+    z-index: 5;
+ }
+ 
+ @keyframes scoot-right-anim {
+   0% { transform: translateX(-60vw) scaleX(-1); }
+   40% { transform: translateX(-60vw) scaleX(-1); }
+   100% {
+     transform: translateX(100vw) scaleX(-1);
+   }
+   /*https://css-tricks.com/almanac/properties/t/transform/*/
+ }
