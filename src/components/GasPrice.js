@@ -1,18 +1,39 @@
 import React from 'react'
 
 const styles = {
-    button: {
-        backgroundColor: 'rgba(255,255,255,0.5)',
-        margin: '2px',
-        cursor: 'pointer'
-    
-    },
-    input: {
-        boxShadow: 'inset 0 0 1px #222222',
-        maxWidth: 'content',
-        backgroundColor: 'rgba(0,0,0,0)',
-        border: 'none'
-    }
+  button: {
+    backgroundColor: 'rgba(255,255,255,0.5)',
+    margin: '2px',
+    cursor: 'pointer',
+  },
+  input: {
+    boxShadow: 'inset 0 0 1px #222222',
+    paddingLeft: '10px',
+    backgroundColor: 'rgba(255,255,255,0.6)',
+    border: 'none',
+    height: '43px',
+  },
+}
+
+export default ({ handleGasPriceChange, gasPrice }) => {
+  return (
+    <label style={{ margin: '10px' }}>
+      <h5>Gas Price $</h5>
+      <input
+        style={styles.input}
+        name="gasPrice"
+        type="number"
+        onFocus={event => event.target.select()}
+        onChange={event => handleGasPriceChange(event, gasPrice)}
+        onKeyPress={event => {
+          ;(event.which === 13 && event.preventDefault()) ||
+            (event.which === 32 && event.preventDefault())
+        }}
+        // style={{border: '1px solid grey', boxSizing: 'border-box'}}
+        value={gasPrice}
+      />
+    </label>
+  )
 }
 
 // const buttonStyle = {
@@ -27,48 +48,3 @@ const styles = {
 //     backgroundColor: 'rgba(0,0,0,0)',
 //     border: 'none'
 // }
-
-export default ({handleInputChange, handleKeyPress, handlePlusMinusGasPrice, gasPrice }) => {
-    return (<div>
-            <label>
-                <button
-                    style={ styles.button }
-                    name='addMPG'
-                    type='button'
-                    onClick={(event)=> handlePlusMinusGasPrice(0 - 0.5, event)}
-                    // onClick={handlePlusMinus.bind(this)}
-                >-50¢</button>
-                <button
-                    style={ styles.button }
-                    name='addMPG'
-                    type='button'
-                    onClick={(event)=> handlePlusMinusGasPrice(0 - 0.1, event)}
-                    // onClick={handlePlusMinus.bind(this)}
-                >-10¢</button>
-                $
-                <input
-                    style={ styles.input }
-                    name="gasPrice"
-                    type="number"
-                    onKeyPress={ handleKeyPress.bind(this)}
-                    // style={{border: '1px solid grey', boxSizing: 'border-box'}}
-                    value={gasPrice}
-                    // onChange={handleInputChange.bind(this)}
-                    />Gas Price
-                </label>
-                <button
-                    style={ styles.button }
-                    name='addMPG'
-                    type='button'
-                    onClick={(event)=> handlePlusMinusGasPrice(.1, event)}
-                    // onClick={handlePlusMinus.bind(this)}
-                >+10¢</button>
-                <button
-                    style={ styles.button }
-                    name='addMPG'
-                    type='button'
-                    onClick={(event)=> handlePlusMinusGasPrice(0.5, event)}
-                    // onClick={handlePlusMinus.bind(this)}
-                >+50¢</button>
-            </div>)
-}

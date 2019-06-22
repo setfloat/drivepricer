@@ -2,7 +2,7 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: '#Gas100k',
+    title: 'Drive Pricer',
   },
   plugins: [
     {
@@ -10,6 +10,15 @@ module.exports = {
       options: {
         name: `images`,
         path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'drive-pricer-prod',
+        region: 'us-west-2',
+        protocol: 'https',
+        hostname: 'drivepricer.com',
       },
     },
     'gatsby-plugin-react-helmet',
@@ -24,7 +33,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/components/carbar/scoot.svg',
       },
     },
     'gatsby-plugin-offline',

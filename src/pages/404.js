@@ -3,8 +3,18 @@ import Layout from '../components/layout'
 
 const NotFoundPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <section
+      style={{
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        marginTop: '80px',
+      }}
+    >
+      <h1>Page not found</h1>
+      <a href="/">Return to Drive Pricer</a>
+    </section>
   </Layout>
 )
 
