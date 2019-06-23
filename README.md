@@ -33,10 +33,10 @@
 - [Contact](#Contact)
 
 
+[![Initial Splash Screen][splashscreen]](https://drivepricer.com)
 
 ## About The Project
 
-[![Initial Splash Screen][splashscreen]](https://drivepricer.com)
 
 Drive Pricer is a tool that aims to help people make informed financial decisions when purchasing a car. The standard metrics around gas mileage simply aren't useful for predicting the cost of gas for a vehicle. By estimating the fuel costs for a substantial portion of a vehicle's life, a buyer can better understand the true cost of that vehicle.
 
