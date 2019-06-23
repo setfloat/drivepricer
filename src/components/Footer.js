@@ -29,10 +29,10 @@ export default () => (
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.github.com/setfloat"
+        href="https://www.github.com/setfloat/drivepricer"
         style={{ textDecoration: 'none', color: 'inherit' }}
       >
-        github.com/setfloat
+        Github
       </a>{' '}
       | © {currentYear} Neighbor Labs LLC
     </h5>
