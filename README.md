@@ -7,7 +7,7 @@
 
 <br />
 <p align="center">
-  <h3 align="center">Drive Pricer</h3>
+  <h1 align="center">Drive Pricer</h1>
 
   <p align="center">
     The cost to drive 100,000 miles can vary wildly. Estimate the cost of gas before purchasing a car.
@@ -28,6 +28,7 @@
   - [Built With](#Built-With)
 - [Acknowledgements](#Acknowledgements)
 - [Installation](#Installation)
+- [Additional Screenshots](#Additional-Screenshots)
 - [License](#License)
 - [Contact](#Contact)
 
@@ -35,7 +36,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://drivepricer.com)
+[![Initial Splash Screen][splashscreen]](https://drivepricer.com)
 
 Drive Pricer is a tool that aims to help people make informed financial decisions when purchasing a car. The standard metrics around gas mileage simply aren't useful for predicting the cost of gas for a vehicle. By estimating the fuel costs for a substantial portion of a vehicle's life, a buyer can better understand the true cost of that vehicle.
 
@@ -92,6 +93,13 @@ Develop mode runs on port 8000 and uses a less performant development build with
   ```
     
 
+## Additional Screenshots
+
+
+[![Screenshot with calculated fuel costs][calcscreen]](https://drivepricer.com)
+
+
+
 
 
 ## License
@@ -115,4 +123,5 @@ Project URL: [https://drivepricer.com](https://drivepricer.com)
 [contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/setfloat
-[product-screenshot]: https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/screenshot.png
+[splashscreen]: https://raw.githubusercontent.com/setfloat/drivepricer/master/splashscreen.png
+[calcscreen]: https://raw.githubusercontent.com/setfloat/drivepricer/master/calcscreen.png
