@@ -53,7 +53,8 @@ class DrivePricer extends Component {
               textAlign: 'center',
               margin: '50px 0',
               color: 'rgb(55, 171, 249)', // blue car color
-              fontFamily: 'Monoton',
+              fontFamily: 'Audiowide',
+              fontStyle: 'italic',
             }}
           >
             Drive Pricer

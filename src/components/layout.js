@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
           <link
-            href="https://fonts.googleapis.com/css?family=Kalam:300|Monoton&display=swap"
+            href="https://fonts.googleapis.com/css?family=Kalam:300|Audiowide&display=swap"
             rel="stylesheet"
           />
         </Helmet>
