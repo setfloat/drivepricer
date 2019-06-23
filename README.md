@@ -59,10 +59,10 @@ Drive Pricer's second purpose is to help people improve their environmental impa
 * [AWS Command Line Interface](https://aws.amazon.com/cli)
 * [Article that helped with s3 bucket config](https://firstclassjs.com/deploy-angular-application-to-aws-s3-and-cloudfront/)
 * [Kalam Font](https://fonts.google.com/specimen/Kalam?selection.family=Kalam)
+* [Audiowide Font](https://fonts.google.com/specimen/Audiowide?selection.family=Audiowide)
 * [Designer of car icons (Icons were modified from original design)](https://freepik.com)
 * [Distributor of car icons](https://flaticon.com)
 * [Read Me Template](https://github.com/othneildrew/Best-README-Template)
-
 
 
 ## Installation
