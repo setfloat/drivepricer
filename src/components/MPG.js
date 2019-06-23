@@ -14,7 +14,7 @@ const styles = {
   },
   input: {
     boxShadow: 'inset 0 0 1px #222222',
-    paddingLeft: '10px',
+    paddingLeft: '12px',
     backgroundColor: 'rgba(255,255,255,0.6)',
     border: 'none',
     height: '43px',
@@ -25,7 +25,6 @@ const styles = {
 
 export default ({ handleInputChange, mileage }) => (
   <label style={{ margin: '10px' }}>
-    <h5>MPG</h5>
     <input
       name="mileage"
       onFocus={event => event.target.select()}
@@ -38,5 +37,6 @@ export default ({ handleInputChange, mileage }) => (
       }}
       onChange={handleInputChange.bind(this)}
     />
+    <h5 style={{ margin: '12px 0 12px 12px' }}>MPG</h5>
   </label>
 )

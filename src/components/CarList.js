@@ -47,7 +47,7 @@ export default ({ cars100k }) => {
             <h3>${car.cost100k.toLocaleString()}</h3>
             <h6
               style={{
-                paddingLeft: '10px',
+                paddingLeft: '12px',
               }}
             >
               gas cost / 100k miles

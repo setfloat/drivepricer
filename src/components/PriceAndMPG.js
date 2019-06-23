@@ -10,7 +10,7 @@ const styles = {
   },
   input: {
     boxShadow: 'inset 0 0 1px #222222',
-    paddingLeft: '10px',
+    paddingLeft: '12px',
     backgroundColor: 'rgba(255,255,255,0.6)',
     border: 'none',
     height: '43px',
@@ -105,7 +105,6 @@ export default class PriceAndMPG extends Component {
           mileage={mileage}
         ></MPG>
         <label style={{ margin: '10px' }}>
-          <h5>Type of Car</h5>
           <input
             name="carType"
             type="text"
@@ -114,6 +113,7 @@ export default class PriceAndMPG extends Component {
             onChange={this.handleInputChange.bind(this)}
             onKeyPress={event => event.which === 13 && event.preventDefault()}
           />
+          <h5 style={{ margin: '12px 0 12px 12px' }}>Type of Car</h5>
         </label>
         <div
           style={{

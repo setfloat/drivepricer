@@ -8,7 +8,7 @@ const styles = {
   },
   input: {
     boxShadow: 'inset 0 0 1px #222222',
-    paddingLeft: '10px',
+    paddingLeft: '12px',
     backgroundColor: 'rgba(255,255,255,0.6)',
     border: 'none',
     height: '43px',
@@ -18,7 +18,6 @@ const styles = {
 export default ({ handleGasPriceChange, gasPrice }) => {
   return (
     <label style={{ margin: '10px' }}>
-      <h5>Gas Price $</h5>
       <input
         style={styles.input}
         name="gasPrice"
@@ -32,6 +31,7 @@ export default ({ handleGasPriceChange, gasPrice }) => {
         // style={{border: '1px solid grey', boxSizing: 'border-box'}}
         value={gasPrice}
       />
+      <h5 style={{ margin: '12px 0 12px 12px' }}>Gas Price $</h5>
     </label>
   )
 }
