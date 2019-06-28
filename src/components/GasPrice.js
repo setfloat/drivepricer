@@ -22,6 +22,7 @@ export default ({ handleGasPriceChange, gasPrice }) => {
         style={styles.input}
         name="gasPrice"
         type="number"
+        step="0.001"
         onFocus={event => event.target.select()}
         onChange={event => handleGasPriceChange(event, gasPrice)}
         onKeyPress={event => {

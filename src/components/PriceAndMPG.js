@@ -38,24 +38,18 @@ export default class PriceAndMPG extends Component {
 
     if (type === 'number') {
       if (value === '') {
-        this.setState({
-          [name]: 0,
-        })
-      } else if (isNaN(Number(value))) {
-        value = null
-      } else {
-        if (typeof value === 'string') {
-          value = parseFloat(value)
-        }
-        this.setState({
-          [name]: value,
-        })
+        value = 0
       }
-    } else {
-      this.setState({
-        [name]: value,
-      })
+      if (typeof value === 'string') {
+        value = parseFloat(value)
+      }
+      if (typeof value !== 'number') {
+        value = 0
+      }
     }
+    this.setState({
+      [name]: value,
+    })
   }
 
   async handleSubmit(event) {

@@ -29,6 +29,7 @@ export default ({ handleInputChange, mileage }) => (
       name="mileage"
       onFocus={event => event.target.select()}
       type="number"
+      step="0.001"
       style={styles.input}
       value={mileage}
       onKeyPress={event => {
